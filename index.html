@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/96b6321630.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>clean site map</title>
+  </head>
+  <body>
+    <!-- start of navigation  -->
+    <div class="nav-container">
+      <ul class="nav">
+        <li>
+          <a href="/index.html">Clean siteMap</a>
+        </li>
+        <li>
+          <a href="/list.html">Clean Ul List</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- end navigation  -->
+
+    <div>
+      <h1>Clean site map</h1>
+      <textarea
+        name="links"
+        id="cleanLinks"
+        cols="30"
+        rows="10"
+        onchange="handleChange(this)"
+        name="urls"
+      ></textarea>
+      <div class="input-container">
+        <input type="submit" value="submit" class="submitBtn" />
+      </div>
+    </div>
+    <div class="showLinks"></div>
+
+    <div class="copy">
+      <textarea name="copyValue" id="copyValue" cols="30" rows="10"></textarea>
+      <div class="icon"><i class="fa-solid fa-copy"></i></div>
+      <div class="clean-icon"><i class="fa-solid fa-broom"></i></div>
+    </div>
+    <script src="regex.js"></script>
+  </body>
+</html>
