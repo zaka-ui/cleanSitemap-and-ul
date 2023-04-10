@@ -9,14 +9,18 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon" />
     <title>clean site map</title>
   </head>
   <body>
     <!-- start of navigation  -->
     <div class="nav-container">
+      <div class="logo">
+        <img src="LOGO.png" alt="tender" />
+      </div>
       <ul class="nav">
         <li>
-          <a href="/index.html">Clean siteMap</a>
+          <a href="/index.html" class="active">Clean siteMap</a>
         </li>
         <li>
           <a href="/list.html">Clean Ul List</a>
@@ -26,26 +30,33 @@
 
     <!-- end navigation  -->
 
-    <div>
-      <h1>Clean site map</h1>
-      <textarea
-        name="links"
-        id="cleanLinks"
-        cols="30"
-        rows="10"
-        onchange="handleChange(this)"
-        name="urls"
-      ></textarea>
-      <div class="input-container">
-        <input type="submit" value="submit" class="submitBtn" />
+    <div class="container">
+      <div>
+        <h1>Clean site map</h1>
+        <textarea
+          name="links"
+          id="cleanLinks"
+          cols="30"
+          rows="10"
+          onchange="handleChange(this)"
+          name="urls"
+        ></textarea>
+        <div class="input-container">
+          <input type="submit" value="clear" class="submitBtn" />
+        </div>
       </div>
-    </div>
-    <div class="showLinks"></div>
+      <div class="showLinks"></div>
 
-    <div class="copy">
-      <textarea name="copyValue" id="copyValue" cols="30" rows="10"></textarea>
-      <div class="icon"><i class="fa-solid fa-copy"></i></div>
-      <div class="clean-icon"><i class="fa-solid fa-broom"></i></div>
+      <div class="copy">
+        <textarea
+          name="copyValue"
+          id="copyValue"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div class="icon"><i class="fa-solid fa-copy"></i></div>
+        <div class="clean-icon"><i class="fa-solid fa-broom"></i></div>
+      </div>
     </div>
     <script src="regex.js"></script>
   </body>
