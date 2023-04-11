@@ -43,6 +43,7 @@ submitBtn.addEventListener("click", () => {
   }
 
   cleanIcon.addEventListener("click", () => {
+    textErea.value = "";
     copyValue.value = "";
   });
 });
